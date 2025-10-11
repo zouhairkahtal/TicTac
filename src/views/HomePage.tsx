@@ -37,11 +37,11 @@ export function HomePage() {
                 </button>
               </div>
             </div>
-            <div className="w-2/4 h-full  flex items-center justify-end ">
+            <div className="w-2/4 h-full  flex items-center justify-end select-none">
               <img
                 src={homeImage}
                 alt={homeImage}
-                className=" w-[400px] select-none"
+                className=" w-[400px] "
               />
             </div>
           </div>
