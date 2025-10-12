@@ -1,5 +1,8 @@
 import background from "../assets/image/backgroun-home-page.jpg";
 import homeImage from "../assets/image/homePageImage.png";
+import sell from "../assets/image/offers image/sell.jpeg";
+import repair from "../assets/image/offers image/repair.jpeg";
+import consultation from "../assets/image/offers image/consultation.jpeg";
 
 export function HomePage() {
   const backgroundStyle = {
@@ -22,7 +25,7 @@ export function HomePage() {
           className="w-full h-full bg-gray-100 flex items-center justify-center"
           style={backgroundStyle}
         >
-          <div className="w-[1250px] h-[600px] mt-32 flex ">
+          <div className=" max-[1750px]:w-[950px] max-[2000px]:w-[1200px] max-[1250px]:w-full w-[1250px] h-[600px] mt-32 flex p-5 ">
             <div className="w-2/4 h-full ">
               <div className=" text-white max-w-md mt-10 ">
                 <h1 className="text-6xl font-bold mb-4">
@@ -38,15 +41,64 @@ export function HomePage() {
               </div>
             </div>
             <div className="w-2/4 h-full  flex items-center justify-end select-none">
-              <img
-                src={homeImage}
-                alt={homeImage}
-                className=" w-[400px] "
-              />
+              <img src={homeImage} alt={homeImage} className=" w-[400px] " />
             </div>
           </div>
         </div>
-        <div className="w-full h-full bg-red-200"></div>
+        <div className="w-full h-2/4  flex flex-col items-center justify-around">
+          <h1 className=" text-5xl w-full text-center text-green-800 font-bold">
+            The offers we offer
+          </h1>
+
+          <div className="flex gap-20 w-full  mb-20 items-center justify-center px-5">
+            <div className="bg-green-800 w-72 h-56 flex flex-col items-center p-5 rounded-lg shadow-xl transition ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
+              <div className="w-full h-full">
+                <img src={sell} alt={sell} className=" w-[60px] rounded-full" />
+              </div>
+              <div className="h-52 ">
+                <h1 className=" text-xl font-semibold text-white">sell</h1>
+                <p className="text-sm text-white">
+                  High-quality watches in different styles — classic or modern,
+                  at great prices
+                </p>
+              </div>
+            </div>
+            <div className="bg-green-800 w-72 h-56 flex flex-col items-center p-5 rounded-lg shadow-xl transition ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
+              <div className="w-full h-full">
+                <img
+                  src={repair}
+                  alt={repair}
+                  className=" w-[60px] rounded-full"
+                />
+              </div>
+              <div className="h-52 ">
+                <h1 className=" text-xl font-semibold text-white">repair</h1>
+                <p className="text-sm text-white">
+                  Fast and professional watch repair to restore your timepiece.
+                </p>
+              </div>
+            </div>
+            <div className="bg-green-800 w-72 h-56 flex flex-col items-center p-5 rounded-lg shadow-xl transition ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
+              <div className="w-full h-full">
+                <img
+                  src={consultation}
+                  alt={consultation}
+                  className=" w-[60px] rounded-full"
+                />
+              </div>
+              <div className="h-52 ">
+                <h1 className=" text-xl font-semibold text-white">
+                  consultation
+                </h1>
+                <p className="text-sm text-white">
+                  Get expert advice to choose the perfect watch for your style
+                  and budget.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-full h-4/5 bg-red-200"></div>
       </div>
     </>
   );
