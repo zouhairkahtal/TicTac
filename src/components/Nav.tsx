@@ -19,7 +19,7 @@ export function Nav() {
   return (
     <div
       className={`fixed w-full z-50 flex items-center justify-around max-[1250px]:justify-between px-6 transition-colors duration-300 ${
-        scrolled ? "bg-white shadow-xl h-20" : "bg-transparent h-32"
+        scrolled ? "bg-white shadow-xl h-24" : "bg-transparent h-32"
       }`}
     >
       {/* Logo */}
