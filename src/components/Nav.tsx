@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-
+import { useNavigate } from "react-router";
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const navigate = useNavigate();
 
  useEffect(() => {
   const handleScroll = () => {
@@ -36,12 +37,14 @@ export function Nav() {
           <li
             className="hover:underline hover:shadow-inner hover:shadow-gray-200 select-none font-semibold text-xl py-2 px-4 rounded-lg transition duration-300 ease-in-out cursor-pointer"
             style={{ color: scrolled ? "black" : "white" }}
+             onClick={() => navigate("/HomePage")}
           >
             Home
           </li>
           <li
             className="hover:underline hover:shadow-inner hover:shadow-gray-200 select-none font-semibold text-xl py-2 px-4 rounded-lg transition duration-300 ease-in-out cursor-pointer"
             style={{ color: scrolled ? "black" : "white" }}
+          onClick={() => navigate("/AboutPage")}
           >
             About
           </li>

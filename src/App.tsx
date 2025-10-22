@@ -2,6 +2,7 @@ import { Layout } from "../src/layout";
 
 import { HomePage } from "../src/views/HomePage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { About } from "./views/AboutPage";
 
 
 
@@ -19,10 +20,14 @@ function App() {
           index: true,
           element: <HomePage/>,
         },
-        // // {
-        // //   path: "HomePage",
-        // //   element: <HomePage />,
-        // // },
+        {
+          path:"HomePage",
+          element: <HomePage/>,
+        },
+        {
+          path: "AboutPage",
+          element: <About />,
+        },
         // {
         //   path: "LogIn",
         //   element: <LogIn />,

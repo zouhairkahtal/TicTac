@@ -13,7 +13,7 @@ export  function Layout() {
       </header>
 
  
-      <main className="flex-1  flex items-center justify-center "
+      <main className="flex-1  flex items-center justify-center flex-col"
       
      >
         <Outlet />
