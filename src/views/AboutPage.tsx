@@ -1,52 +1,58 @@
 import about from "../assets/image/bg-about.jpg";
+import sarah from "../assets/image/profiles images/Sarah.jpg";
+import Omar from "../assets/image/profiles images/Omar.jpg";
+import Youssef from "../assets/image/profiles images/Youssef.jpg";
 
 export function About() {
   return (
     <>
       <div className=" w-full h-[1000px] bg-gray-950 flex items-center justify-center ">
-        <div className="max-[1750px]:w-[950px] max-[2000px]:w-[1200px] max-[1250px]:w-full w-[1250px] h-[700px] mt-32 flex p-5  max-[515px]:h-[890px]   max-[515px]:flex-col-reverse bg-white rounded-xl gap-5">
-          <div className="w-2/4 h-full max-[515px]:w-full max-[515px]:h-2/4 bg-gray-950 rounded-xl text-white p-5">
-            <h4>Our Story,</h4>
-            <h1 className="text-4xl font-semibold  my-10"> Our Passion</h1>
-            <p className="text-xl font-light pr-10">
+        <div className="max-[1750px]:w-[950px] max-[2000px]:w-[1200px] max-[1250px]:w-full w-[1250px] h-[700px] mt-32 flex p-5  max-[800px]:h-[890px]   max-[800px]:flex-col  rounded-xl gap-5">
+          <div className="w-2/4 h-full max-[800px]:w-full max-[800px]:h-2/4 bg-gray-950 rounded-xl text-white p-5">
+            <h4 className="text-yellow-500">Our Story,</h4>
+            <h1 className="text-4xl font-semibold  my-10 max-[540px]:my-5  "> Our Passion</h1>
+            <p className="text-xl font-light pr-10 max-[540px]:pr-2 max-[540px]:text-sm">
               For more than four years, we’ve been crafting watches that tell
               more than time — they tell a story. Born from a passion for
               precision and design, our brand blends traditional craftsmanship
               with modern elegance. Every piece we create reflects dedication,
               authenticity, and timeless style.
             </p>
-            <button>Learn More</button>
+            <button className="px-10 py-3 bg-white text-blue-950 rounded-xl mt-10 text-lg hover:text-white hover:bg-gray-950 border border-white">Learn More</button>
           </div>
-          <div className="w-2/4 h-full max-[515px]:w-full max-[515px]:h-2/4 ">
-            <div className="w-full h-2/4 rounded-xl overflow-hidden ">
-              <img src={about} alt={about} className=" w-full  h-full  " />
+          <div className="w-2/4 h-full max-[800px]:w-full max-[800px]:h-2/4  ">
+            <div className="w-full h-2/4 rounded-xl overflow-hidden max-[800px]:bg-[hsl(240,17,2)] ">
+              <img src={about} alt={about} className=" w-full  h-full  max-[800px]:max-w-[500px] " />
             </div>
             <div className="w-full h-2/4 ">
-              <div className="w-full h-2/4 bg-white flex gap-10">
+              <div className="w-full h-2/4  flex gap-10 ">
                 <div className="w-2/4 h-full  py-5 ">
-                  <div className="w-full h-full bg-slate-100 rounded-xl p-5 flex items-start justify-center flex-col">
-                    <h1 className="text-2xl font-semibold">4.5</h1>
-                    <h4 className="text-xl font-medium">Years Experience</h4>
+                  <div className="w-full h-full bg-white hover:border hover:border-white hover:bg-gray-950 hover:text-white text-gray-950 rounded-xl p-5 flex items-start justify-center flex-col  max-[470px]:flex-col  max-[470px]:items-start hover:scale-105 transition ease-in-out   max-[470px]:gap-0  max-[800px]:flex-row max-[800px]:items-center max-[800px]:gap-5">
+                    <h1 className="text-2xl font-semibold max-[470px]:text-sm">8.5</h1>
+                    <h4 className="text-xl font-medium max-[470px]:text-sm">Years Experience</h4>
                   </div>
                 </div>
                 <div className="w-2/4 h-full  py-5 ">
-                  <div className="w-full h-full bg-slate-100 rounded-xl p-5 flex items-start justify-center flex-col">
-                    <h1 className="text-2xl font-semibold">4.5</h1>
-                    <h4 className="text-xl font-medium">Years Experience</h4>
+                  <div className="w-full h-full bg-white hover:border hover:border-white hover:bg-gray-950 hover:text-white text-gray-950 rounded-xl p-5 flex items-start justify-center flex-col  max-[470px]:flex-col  max-[470px]:items-start hover:scale-105 transition ease-in-out   max-[470px]:gap-0 max-[800px]:flex-row max-[800px]:items-center max-[800px]:gap-5">
+
+        
+                    <h1 className="text-2xl font-semibold max-[470px]:text-sm">3.6</h1>
+                    <h4 className="text-xl font-medium max-[470px]:text-sm">Years repair</h4>
                   </div>
                 </div>
               </div>
-              <div className="w-full h-2/4 bg-white flex gap-10">
+              <div className="w-full h-2/4  flex gap-10">
                 <div className="w-2/4 h-full  py-5 ">
-                  <div className="w-full h-full bg-slate-100 rounded-xl p-5 flex items-start justify-center flex-col">
-                    <h1 className="text-2xl font-semibold">4.5</h1>
-                    <h4 className="text-xl font-medium">Years Experience</h4>
+                  <div className="w-full h-full bg-white hover:border hover:border-white hover:bg-gray-950 hover:text-white text-gray-950 rounded-xl p-5 flex items-start justify-center flex-col  max-[470px]:flex-col  max-[470px]:items-start hover:scale-105 transition ease-in-out   max-[470px]:gap-0 max-[800px]:flex-row max-[800px]:items-center max-[800px]:gap-5">
+                    <h1 className="text-2xl font-semibold max-[470px]:text-sm">6.5</h1>
+                    <h4 className="text-xl font-medium max-[470px]:text-sm">Years sell
+</h4>
                   </div>
                 </div>
                 <div className="w-2/4 h-full  py-5 ">
-                  <div className="w-full h-full bg-slate-100 rounded-xl p-5 flex items-start justify-center flex-col">
-                    <h1 className="text-2xl font-semibold">4.5</h1>
-                    <h4 className="text-xl font-medium">Years Experience</h4>
+                  <div className="w-full h-full bg-white hover:border hover:border-white hover:bg-gray-950 hover:text-white text-gray-950 rounded-xl p-5 flex items-start justify-center flex-col  max-[470px]:flex-col  max-[470px]:items-start hover:scale-105 transition ease-in-out   max-[470px]:gap-0 max-[800px]:flex-row max-[800px]:items-center max-[800px]:gap-5">
+                    <h1 className="text-2xl font-semibold max-[470px]:text-sm">5.2</h1>
+                    <h4 className="text-xl font-medium max-[470px]:text-sm">Years consultation</h4>
                   </div>
                 </div>
               </div>
@@ -54,6 +60,87 @@ export function About() {
           </div>
         </div>
       </div>
+
+     <div className="w-full h-[800px] bg-whi flex items-center justify-center">
+  <div className="max-[1750px]:w-[950px] max-[2000px]:w-[1200px] max-[1250px]:w-full w-[1250px] h-[600px] flex flex-col items-center justify-center p-5 max-[515px]:h-auto max-[515px]:flex-col  rounded-xl gap-10">
+
+    {/* TITLE */}
+    <div className="text-center mb-8 max-[440px]:mb-0 max-[440px]:mt-3">
+      <h1 className="text-4xl font-bold text-gray-900 mb-3 max-[440px]:mb-1">What People Say</h1>
+      <p className="text-gray-600 max-w-[700px] max-[440px]:text-sm">
+        Hear from those who trusted our craftsmanship and experienced the quality of our work.
+      </p>
+    </div>
+
+    {/* TESTIMONIALS GRID */}
+    <div className="grid grid-cols-3 max-[900px]:grid-cols-1 gap-6 max-[440px]:gap-2 w-full">
+      {/* CARD 1 */}
+      <div className="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+        <div className="h-2/4">
+
+        <p className="text-gray-700 italic mb-4 max-[440px]:mb-2">
+          “The craftsmanship and detail are incredible. My watch still feels brand new after two years!”
+        </p>
+        </div>
+        <div className="flex  ">
+            <div className="w-20 h-20 bg-white mr-2 rounded-md overflow-hidden">
+    <img src={Omar} alt={Omar}  className="w-20 h-20 "/>
+            </div>
+            <div className=" flex flex-col ">
+
+          <h4 className="font-semibold text-gray-900">Omar B.</h4>
+          <span className="text-gray-500 text-sm">Casablanca</span>
+          <span className="text-yellow-400 mt-2">⭐️⭐️⭐️⭐️⭐️</span>
+            </div>
+        </div>
+      </div>
+
+      {/* CARD 2 */}
+      <div className="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+        <div className="h-2/4">
+            
+        <p className="text-gray-700 italic mb-4">
+          “Elegant, timeless, and beautifully designed. You can feel the passion behind every piece.”
+        </p>
+        </div>
+      <div className="flex ">
+            <div className="w-20 h-20 bg-white mr-2 rounded-md overflow-hidden">
+<img src={sarah} alt={sarah}  className="w-20 h-20 "/>
+            </div>
+            <div className=" flex flex-col ">
+
+          <h4 className="font-semibold text-gray-900">Sarah M.</h4>
+          <span className="text-gray-500 text-sm">Marrakech</span>
+          <span className="text-yellow-400 mt-2">⭐️⭐️⭐️⭐️⭐️</span>
+            </div>
+        </div>
+      </div>
+
+      {/* CARD 3 */}
+      <div className="bg-gray-50 rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300">
+        <div className="h-2/4">
+
+        <p className="text-gray-700 italic mb-4">
+          “I’ve never received so many compliments on a watch before. The quality speaks for itself.”
+        </p>
+        </div>
+        <div className="flex  ">
+            <div className="w-20 h-20 bg-white mr-2 rounded-md overflow-hidden">
+
+<img src={Youssef} alt={Youssef}  className="w-20 h-20 "/>
+            </div>
+            <div className=" flex flex-col ">
+          <h4 className="font-semibold text-gray-900">Youssef A.</h4>
+          <span className="text-gray-500 text-sm">Rabat</span>
+          <span className="text-yellow-400 mt-2">⭐️⭐️⭐️⭐️⭐️</span>
+            </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
       <footer className="bg-black w-full">
         <div className="mx-auto w-full max-w-screen-xl">
           <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3">
@@ -135,7 +222,7 @@ export function About() {
               © 2025 TicTac. All Rights Reserved.
             </span>
             <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
-              <a href="#" className="text-gray-400 hover:text-gray-900 ">
+              <a href="#" className="text-gray-400 hover:text-yellow-300 ">
                 <svg
                   className="w-4 h-4"
                   aria-hidden="true"
@@ -151,7 +238,7 @@ export function About() {
                 </svg>
                 <span className="sr-only">Facebook page</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-gray-900 ">
+              <a href="#" className="text-gray-400 hover:text-yellow-300 ">
                 <svg
                   className="w-4 h-4"
                   aria-hidden="true"
@@ -163,7 +250,7 @@ export function About() {
                 </svg>
                 <span className="sr-only">Discord community</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-gray-900 ">
+              <a href="#" className="text-gray-400 hover:text-yellow-300 ">
                 <svg
                   className="w-4 h-4"
                   aria-hidden="true"
@@ -179,7 +266,7 @@ export function About() {
                 </svg>
                 <span className="sr-only">Twitter page</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-gray-900">
+              <a href="#" className="text-gray-400 hover:text-yellow-300">
                 <svg
                   className="w-4 h-4"
                   aria-hidden="true"
@@ -195,7 +282,7 @@ export function About() {
                 </svg>
                 <span className="sr-only">GitHub account</span>
               </a>
-              <a href="#" className="text-gray-400 hover:text-gray-900 ">
+              <a href="#" className="text-gray-400 hover:text-yellow-300 ">
                 <svg
                   className="w-4 h-4"
                   aria-hidden="true"
