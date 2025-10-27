@@ -3,6 +3,7 @@ import { Layout } from "../src/layout";
 import { HomePage } from "../src/views/HomePage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { About } from "./views/AboutPage";
+import { ContactUs } from "./views/ContactUs";
 
 
 
@@ -28,10 +29,10 @@ function App() {
           path: "AboutPage",
           element: <About />,
         },
-        // {
-        //   path: "LogIn",
-        //   element: <LogIn />,
-        // },
+        {
+          path: "contactUs",
+          element: <ContactUs />,
+        },
         // {
         //   path: "SingUp",
         //   element: <SingUP />,

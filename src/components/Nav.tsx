@@ -51,6 +51,7 @@ export function Nav() {
           <li
             className="hover:underline hover:shadow-inner hover:shadow-gray-200 select-none font-semibold text-xl py-2 px-4 rounded-lg transition duration-300 ease-in-out cursor-pointer"
             style={{ color: scrolled ? "black" : "white" }}
+              onClick={() => navigate("/contactUs")}
           >
             Contact Us
           </li>

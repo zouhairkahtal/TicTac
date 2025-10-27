@@ -9,7 +9,7 @@ export function About() {
       <div className=" w-full h-[1000px] bg-gray-950 flex items-center justify-center ">
         <div className="max-[1750px]:w-[950px] max-[2000px]:w-[1200px] max-[1250px]:w-full w-[1250px] h-[700px] mt-32 flex p-5  max-[800px]:h-[890px]   max-[800px]:flex-col  rounded-xl gap-5">
           <div className="w-2/4 h-full max-[800px]:w-full max-[800px]:h-2/4 bg-gray-950 rounded-xl text-white p-5">
-            <h4 className="text-yellow-500">Our Story,</h4>
+            <h4 className="text-yellow-400">Our Story,</h4>
             <h1 className="text-4xl font-semibold  my-10 max-[540px]:my-5  "> Our Passion</h1>
             <p className="text-xl font-light pr-10 max-[540px]:pr-2 max-[540px]:text-sm">
               For more than four years, we’ve been crafting watches that tell
