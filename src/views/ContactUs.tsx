@@ -1,5 +1,14 @@
-
+import contactBg from "../assets/image/contactBG.jpg"
 export function ContactUs() {
+
+
+  const backgroundStyle = {
+ 
+    backgroundSize: "cover",
+  backgroundPosition: "left",
+    backgroundImage: `url(${contactBg})`,
+  };
+    
   return (
     <>
       <div className="w-full  bg-gray-950 flex flex-col items-center justify-between text-white">
@@ -10,12 +19,13 @@ export function ContactUs() {
     
 
           <div className="flex justify-center bg-gray-950 rounded-xl overflow-hidden" >
-    <div className="w-80 h-full bg-red-400 ">
-        
+    <div className="w-[450px] h-full bg-red-400 "
+        style={backgroundStyle}>
+
 
     </div>
 
-          <div className="w-[800px] h-full bg-gray-900 p-10 rounded-xl shadow-lg">
+          <div className="w-[650px] h-full bg-gray-900 p-10 rounded-xl shadow-lg">
             <h2 className="text-3xl font-bold mb-2 text-yellow-400">
               Get in Touch
             </h2>
