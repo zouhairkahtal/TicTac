@@ -1,80 +1,80 @@
-import contactBg from "../assets/image/contactBG.jpg"
+import contactBg from "../assets/image/contactBG.jpg";
 export function ContactUs() {
-
-
   const backgroundStyle = {
  
     backgroundSize: "cover",
-  backgroundPosition: "left",
+   
     backgroundImage: `url(${contactBg})`,
   };
-    
+
   return (
     <>
       <div className="w-full  bg-gray-950 flex flex-col items-center justify-between text-white">
         {/* Contact Section */}
-        <div className="w-full h-[900px] flex justify-center items-center mt-20 mb-20">
-
-<div className=" w-full h-[700px] flex justify-center">
-    
-
-          <div className="flex justify-center bg-gray-950 rounded-xl overflow-hidden" >
-    <div className="w-[450px] h-full bg-red-400 "
-        style={backgroundStyle}>
-
-
-    </div>
-
-          <div className="w-[650px] h-full bg-gray-900 p-10 rounded-xl shadow-lg">
-            <h2 className="text-3xl font-bold mb-2 text-yellow-400">
-              Get in Touch
-            </h2>
-            <p className="text-gray-300 mb-8">
-              Have any questions or want to work together? Fill the form below
-              and I’ll get back to you soon.
-            </p>
-
-            <form className="flex flex-col gap-5">
-              <div>
-                <label className="block text-gray-300 mb-2">Your Name</label>
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-yellow-400 outline-none text-white"
-                />
-              </div>
-
-              <div>
-                <label className="block text-gray-300 mb-2">Email</label>
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-yellow-400 outline-none text-white"
-                />
-              </div>
-
-              <div>
-                <label className="block text-gray-300 mb-2">Message</label>
-                <textarea
-                  placeholder="Write your message..."
-                  rows={5}
-                  className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-yellow-400 outline-none text-white resize-none"
-                />
-              </div>
-
-              <button
-                type="submit"
-                className="mt-4 bg-yellow-400 text-gray-900 font-semibold py-3 rounded-lg hover:bg-yellow-300 transition-all duration-300"
+        <div className="w-full h-[900px] flex justify-center  mt-20 mb-20">
+          <div className=" w-full h-[700px] flex justify-center">
+            <div className="flex justify-center bg-gray-950 rounded-xl overflow-hidden
+            max-[1750px]:w-[950px] max-[2000px]:w-[1200px] max-[1250px]:w-full w-[1250px] h-[700px] mt-32  p-5  max-[800px]:h-[700px]      gap-5
+            ">
+              <div
+                className="w-[450px] h-full bg-red-400 rounded-xl max-[810px]:w-[480px] max-[730px]:hidden "
+                style={backgroundStyle}
               >
-                Send Message
-              </button>
-            </form>
+
+                
+              </div>
+
+              <div className="w-[650px] h-full bg-gray-900 p-10 max-[850px]:p-4 rounded-xl shadow-lg 
+              
+              ">
+                <h2 className="text-3xl font-bold mb-2 text-yellow-400">
+                  Get in Touch
+                </h2>
+                <p className="text-gray-300 mb-8">
+                  Have any questions or want to work together? Fill the form
+                  below and I’ll get back to you soon.
+                </p>
+
+                <form className="flex flex-col gap-5">
+                  <div>
+                    <label className="block text-gray-300 mb-2">
+                      Your Name
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Enter your name"
+                      className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-yellow-400 outline-none text-white"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-gray-300 mb-2 max-[930px]:mb-0">Email</label>
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-yellow-400 outline-none text-white"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-gray-300 mb-2 max-[930px]:mb-1">Message</label>
+                    <textarea
+                      placeholder="Write your message..."
+                      rows={3}
+                      className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:border-yellow-400 outline-none text-white resize-none"
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="mt-4 bg-yellow-400 text-gray-900 font-semibold py-3 rounded-lg hover:bg-yellow-300 transition-all duration-300"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </div>
+            </div>
           </div>
-
-          </div>
-</div>
-
-
         </div>
 
         {/* Footer */}

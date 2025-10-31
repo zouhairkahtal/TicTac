@@ -11,12 +11,7 @@ export function HomePage() {
     backgroundSize: "cover",
     backgroundImage: `url(${background})`,
   };
-  //     const homeImageStyle={
-  //         width:"300px",
-  //         height:"300px",
-  //         // backgroundSize:"cover",
-  //    backgroundImage: `url(${background})`,
-  //     }
+
 
   return (
     <>
