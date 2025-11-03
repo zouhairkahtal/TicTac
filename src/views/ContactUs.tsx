@@ -17,7 +17,7 @@ export function ContactUs() {
             max-[1750px]:w-[950px] max-[2000px]:w-[1200px] max-[1250px]:w-full w-[1250px] h-[700px] mt-32  p-5  max-[800px]:h-[700px]      gap-5
             ">
               <div
-                className="w-[450px] h-full bg-red-400 rounded-xl max-[810px]:w-[480px] max-[730px]:hidden "
+                className="w-[450px] h-full rounded-xl max-[810px]:w-[480px] max-[730px]:hidden "
                 style={backgroundStyle}
               >
 

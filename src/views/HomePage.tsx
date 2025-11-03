@@ -4,6 +4,10 @@ import sell from "../assets/image/offers image/sell.jpeg";
 import repair from "../assets/image/offers image/repair.jpeg";
 import consultation from "../assets/image/offers image/consultation.jpeg";
 
+
+
+import { useNavigate } from "react-router";
+
 export function HomePage() {
   const backgroundStyle = {
     width: "100%",
@@ -12,7 +16,8 @@ export function HomePage() {
     backgroundImage: `url(${background})`,
   };
 
-
+  const navigate = useNavigate();
+  
   return (
     <>
       <div className="w-full h-full">
@@ -75,7 +80,9 @@ export function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="bg-green-800 w-72 h-56 flex flex-col items-center p-5 rounded-lg shadow-xl transition ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
+            <div 
+            onClick={() => navigate("/consultation")}
+            className="bg-green-800 w-72 h-56 flex flex-col items-center p-5 rounded-lg shadow-xl transition ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
               <div className="w-full h-full">
                 <img
                   src={consultation}
@@ -83,7 +90,8 @@ export function HomePage() {
                   className=" w-[60px] rounded-full"
                 />
               </div>
-              <div className="h-52 ">
+              <div className="h-52 "
+                >
                 <h1 className=" text-xl font-semibold text-white">
                   consultation
                 </h1>

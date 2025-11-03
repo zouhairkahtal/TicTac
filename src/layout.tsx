@@ -8,7 +8,7 @@ export  function Layout() {
     <div className="h-screen flex flex-col "
      >
 
-      <header className="h-20 fixed">
+      <header className="h-20 z-50 fixed">
         <Nav />
       </header>
 
