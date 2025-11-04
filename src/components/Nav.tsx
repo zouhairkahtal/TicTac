@@ -79,7 +79,7 @@ export function Nav() {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="fixed top-0 right-0 w-2/4 h-screen bg-white flex flex-col items-center md:hidden z-50">
+        <div className="fixed top-0 right-0 w-2/4 h-screen bg-transparent backdrop-blur-lg  flex flex-col items-center md:hidden z-50">
           <button
             className="w-full h-20 flex items-center text-3xl justify-end pr-8"
             onClick={() => setMobileOpen(false)}
@@ -88,18 +88,18 @@ export function Nav() {
           </button>
 
           <ul className="w-full h-80 flex flex-col justify-center items-center gap-y-14 text-xl">
-            <li>
-              <NavLink to="/HomePage" className={({ isActive }) => linkClass(isActive)}>
+            <li className={"bg-white w-full text-center "}>
+              <NavLink to="/HomePage" className={"hover:text-yellow-500"} >
                 Home
               </NavLink>
             </li>
-            <li>
-              <NavLink to="/AboutPage" className={({ isActive }) => linkClass(isActive)}>
+            <li  className={"bg-white w-full text-center "}>
+              <NavLink to="/AboutPage" className={"hover:text-yellow-500"} >
                 About
               </NavLink>
             </li>
-            <li>
-              <NavLink to="/contactUs" className={({ isActive }) => linkClass(isActive)}>
+            <li  className={"bg-white w-full text-center "}>
+              <NavLink to="/contactUs" className={"hover:text-yellow-500"}>
                 Contact Us
               </NavLink>
             </li>
