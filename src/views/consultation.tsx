@@ -109,7 +109,7 @@ export function Consultation() {
                       <div className="p-5 md:p-6">
                         <h3 className="font-extrabold italic text-xl sm:text-2xl md:text-xl mb-3 relative animate-glow">
                           {feature.title}
-                          <span className="absolute left-0 -bottom-1 w-0 h-1 bg-blue-500 transition-all duration-500 group-hover:w-full"></span>
+                          <span className="absolute left-0 rounded-sm -bottom-1 w-0 h-1 bg-black transition-all duration-500 group-hover:w-full"></span>
                         </h3>
                         <p className="text-base sm:text-lg md:text-base leading-relaxed text-gray-700">
                           {feature.description}
