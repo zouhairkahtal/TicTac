@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { About } from "./views/AboutPage";
 import { ContactUs } from "./views/ContactUs";
 import { Consultation } from "./views/consultation";
+import { Repair } from "./views/Repair";
+import { Sell } from "./views/Sell";
 
 
 function App() {
@@ -33,14 +35,14 @@ function App() {
           path: "consultation",
           element: <Consultation />,
         },
-        // {
-        //   path: "ForgotPassword",
-        //   element: <ForgotPassword />,
-        // },
-        // {
-        //   path: "ResetPassword",
-        //   element: <ResetPassword />,
-        // },
+        {
+          path: "Repair",
+          element: <Repair/>,
+        },
+        {
+          path: "Sell",
+          element: <Sell />,
+        },
         // {
         //   path: "Dashboard",
         //   element: <Dashboard />,

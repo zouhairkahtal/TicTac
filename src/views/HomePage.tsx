@@ -53,7 +53,11 @@ export function HomePage() {
           </h1>
 
           <div className="flex gap-20 w-full  mb-20 items-center justify-center px-5   max-[720px]:py-10  max-[720px]:gap-10 max-[720px]:flex-col ">
-            <div className="bg-green-800 w-72 h-56 flex flex-col items-center p-5 rounded-lg shadow-xl transition ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
+
+
+            <div
+            onClick={() => navigate("/Sell")}
+            className="bg-green-800 w-72 h-56 flex flex-col items-center p-5 rounded-lg shadow-xl transition ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
               <div className="w-full h-full">
                 <img src={sell} alt={sell} className=" w-[60px] rounded-full" />
               </div>
@@ -65,7 +69,10 @@ export function HomePage() {
                 </p>
               </div>
             </div>
-            <div className="bg-green-800 w-72 h-56 flex flex-col items-center p-5 rounded-lg shadow-xl transition ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
+            <div
+                        onClick={() => navigate("/Repair")}
+
+             className="bg-green-800 w-72 h-56 flex flex-col items-center p-5 rounded-lg shadow-xl transition ease-in-out hover:scale-105 hover:shadow-2xl cursor-pointer">
               <div className="w-full h-full">
                 <img
                   src={repair}
